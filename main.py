@@ -22,7 +22,7 @@ class AgentState(TypedDict):
 # 3. Inicialización del Modelo Gemini
 # Usamos 'gemini-1.5-flash-8b' que es el modelo más económico y rápido actualmente.
 # Si tienes problemas, prueba con 'gemini-pro' o 'gemini-1.5-flash'.
-llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash")
+llm = ChatGoogleGenerativeAI(model=os.getenv("GEMINI_MODEL"))
 
 # 4. Definición del Nodo de Procesamiento (IA)
 def call_model(state: AgentState):
