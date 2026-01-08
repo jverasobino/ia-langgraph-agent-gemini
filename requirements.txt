@@ -1,0 +1,5 @@
+langgraph
+langchain-google-genai>=4.1.3
+google-generativeai>=0.8.6
+gradio>=6.1.0
+python-dotenv>=1.2.1
