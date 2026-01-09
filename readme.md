@@ -1,11 +1,36 @@
 # ia-langgraph-agent-gemini
-app para chatear con un agente de IA usando langgraph y google gemini.
+este es un chat conversatorio usando un agente langgraph y llm para las respuestas. para la interfaz de usuario se usa gradio.
 
-## install requirements.txt
+
+## Instalación
+Crear ambiente virtual:
+```
+python3 -m venv .venv
+source venv/bin/activate
+```
+
+instalar dependencias:
+```
 pip install -r requirements.txt
+````
 
-## run app
-python3 main.py
+## configuración
+crear archivo .env con las variables de entorno
+```
+GOOGLE_API_KEY=<tu_api_key>
+GEMINI_MODEL=<nombre del modelo>
+```
 
-## view on browser
-http://localhost:7860	
+## Ejecución
+correr el archivo main.py en terminal
+```
+python main.py
+```
+
+## Visualización
+abrir navegador en:
+```
+http://localhost:7860
+```
+
+
